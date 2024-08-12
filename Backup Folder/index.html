@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .carousel-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            background: black;
+            padding: 20px 20px;
+        }
+
+        .carousel-track {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: scroll 20s linear infinite;
+        }
+
+        .carousel-item {
+            min-width: 25%;
+            /* flex: 1 0 auto; */
+            flex-basis: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 50px;
+            /* Reduced padding */
+            margin-right: 0.5px
+        }
+
+        .carousel-item img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+            /* margin: 10px; */
+        }
+
+        .carousel-item img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box container-fluid p-0" style="background-color: black;">
+
+        <body class="body body-1"
+            style="background-: url(https://theartofdocumentary.com/aod-home-hero-preview-1080p.mp4);">
+            <header>
+                <div class="video-container">
+                    <div class="content">
+                        <nav class="navbar navbar-expand-sm p-2">
+                            <div style="display: flex;">
+                                <a class="navbar-brand text-white " href="#"
+                                    style="font-size: 2.5rem; margin-right: 70.5rem; margin-left: 1.5rem;">AOD</a>
+                                <div class="buttons container"
+                                    style="margin-top: 1.2rem; display: flex; margin-right: 1.5rem;">
+                                    <div>
+
+                                    </div>
+
+                                    <span type="button" class="button btn-2">Enroll Now</span>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <video class="container-fluid p-0 m-0" height="100%" width="100%" autoplay muted loop id="myVideo">
+                        <source src="https://theartofdocumentary.com/aod-home-hero-preview-1080p.mp4" type="video/mp4">
+                        <!-- Add additional video formats (webm, ogg) for better browser compatibility -->
+                    </video>
+                </div>
+            </header>
+        </body>
+        <div class="body body-2">
+            <div class="about" style="width: 63px; height: 747px; font-weight: 500; font-size: 25px; color: #ffa200;" data-aos="slide-up">
+                About</div>
+            <div class="sub-body-2">
+                <div id="heading"
+                    style="width: 854px; height: 46px; font-weight: 700; font-size: 45px; margin: 0px 40px 40px 0px;" data-aos="fade-in">
+                    Which courses are right for you?</div>
+                <div id="video" data-aos="fade-out">
+                    <video data-aos="zoom-in" width="1106px" height="622px" autoplay="" loop="" muted="" playsinline="" preload="metadata"
+                        src="https://theartofdocumentary.com/aod-home-about-preview-1080p.mp4"></video>
+                </div>
+            </div>
+        </div>
+
+        <div class="body body-3">
+            <div class="courses" style="margin-bottom:10px; height: 20px; width:21.3px;">
+                <h5 id="courses" style="color: #ffa200;" data-aos="slide-up">Courses</h5>
+            </div>
+            <div class="sub-heading-3" style="margin-bottom: 4.2rem; width: 929px; height: 93px;" data-aos="fade-up">
+                <h1>Unlock new career possibilities – transform your path with our courses today</h1>
+            </div>
+            <div class="body-3-image-gallary">
+                <div class="images-1-row">
+                    <div class="cards"><img data-aos="zoom-in-up" data-aos-duration ="500" style="height: 500px;
+                        width: 511px;" src="Images/image-1.avif" alt=""></div>
+                    <div class="cards"><img data-aos="zoom-in-up" data-aos-duration ="500" style="height: 500px;
+                        width: 511px;" src="Images/image-3.avif" alt=""></div>
+                    <div class="cards"><img data-aos="zoom-in-up" data-aos-duration ="500" style="height: 500px;
+                        width: 511px;" src="Images/image-4.avif" alt=""></div>
+                </div>
+                <div class="images-2-row">
+                    <div class="cards"><img data-aos="zoom-in-up" data-aos-duration ="500" style="height: 500px;
+                        width: 511px;" src="Images/image-5.avif" alt=""></div>
+                    <div class="cards"><img data-aos="zoom-in-up" data-aos-duration ="500" style="height: 500px;
+                        width: 511px;" src="Images/image-6.avif" alt=""></div>
+                    <div class="cards"><img data-aos="zoom-in-up" data-aos-duration ="500" style="height: 500px;
+                        width: 511px;" src="Images/image-2.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body body-4">
+            <div class="members">
+                <h5 style="color: #ffa200;" data-aos="slide-left">Members Accomplishment</h5>
+            </div>
+            <div class="sub-body-4-heading">
+                <h1 style="font-size: 45px" data-aos="slide-right">Our members success rate is unmatchable</h1>
+            </div>
+            <div class="body-4-image-gallary">
+                <div class="words words-1" style="display: flex; flex-direction: column; align-items: center;">
+                    <span data-aos="zoom-out">Complete Docs</span>
+                    <div class="numbers" style="display: flex;">
+                        <div class="numbers-1" data-aos="slide-up" data-aos-delay = "100">+</div>
+                        <div class="numbers-1" data-aos="slide-up" data-aos-delay = "200">1</div>
+                        <div class="numbers-1" data-aos="slide-up" data-aos-delay = "300">2</div>
+                        <div class="numbers-1" data-aos="slide-up" data-aos-delay = "400">0</div>
+                        <div class="numbers-1" data-aos="slide-up" data-aos-delay = "500">0</div>
+                    </div>
+                </div>
+                <div class="words words-2 " style="display: flex; flex-direction: column; align-items: center;">
+                    <span data-aos="zoom-out">In new Clients Contacts</span>
+                    <div class="numbers" style="display: flex;">
+                        <div class="numbers-2" data-aos="slide-up" data-aos-delay = "100">$</div>
+                        <div class="numbers-2" data-aos="slide-up" data-aos-delay = "200">M</div>
+                        <div class="numbers-2" data-aos="slide-up" data-aos-delay = "300">i</div>
+                        <div class="numbers-2" data-aos="slide-up" data-aos-delay = "400">l</div>
+                        <div class="numbers-2" data-aos="slide-up" data-aos-delay = "500">l</div>
+                        <div class="numbers-2" data-aos="slide-up" data-aos-delay = "600">i</div>
+                        <div class="numbers-2" data-aos="slide-up" data-aos-delay = "700">o</div>
+                        <div class="numbers-2" data-aos="slide-up" data-aos-delay = "800">n</div>
+                        <div class="numbers-2" data-aos="slide-up" data-aos-delay = "900">s</div>
+                    </div>
+                </div>
+                <div class="words words-3" style="display: flex; flex-direction: column; align-items: center;">
+                    <span data-aos="zoom-out">Laurels + Festival Selections</span>
+                    <div class="numbers" style="display: flex;">
+                        <div class="numbers-3" data-aos="slide-up" data-aos-delay = "100">+</div>
+                        <div class="numbers-3" data-aos="slide-up" data-aos-delay = "200">6</div>
+                        <div class="numbers-3" data-aos="slide-up" data-aos-delay = "300">0</div>
+                        <div class="numbers-3" data-aos="slide-up" data-aos-delay = "400">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body body-5" style="display: flex; flex-direction: column;">
+            <div data-aos="zoom-out-up" class="background" style="background-image: url('Images/background-img.avif'); width: 100vw; height: 800px; background-repeat: no-repeat; background-size: cover; background-position: center center;
+            background-size: cover;">
+            </div>
+            <div style="margin-top: 100px;">
+                <h5 data-aos="slide-left" style="color: #ffa200;">AOD MEMBERS HAVE BEEN FEATURED ON</h5>
+            </div>
+
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-item ">
+                        <img src="Videos/national-geo.svg" alt="Logo 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Videos/google-play.svg" alt="Logo 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Videos/hbp.svg" alt="Logo 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Videos/netflix.svg" alt="Logo 4">
+                    </div>
+                    <!-- Duplicated Items for Infinite Loop -->
+                    <div class="carousel-item">
+                        <img src="Videos/sony.svg" alt="Logo 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Videos/prime-video.svg" alt="Logo 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Videos/hulu.svg" alt="Logo 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Videos/tubu.svg" alt="Logo 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Videos/pantagonia.svg" alt="Logo 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Videos/bbc.svg" alt="Logo 4">
+                    </div>
+                    <!-- Dupicated -->
+                       
+                </div>
+            </div>
+        </div>
+
+
+        <div class="body body-6" style="display: flex; flex-direction: column;">
+            <div>
+                <h5 data-aos="slide-left" style="color: #ffa200; width: 228px; height: 21px;">PRIZING COMPARISON</h5>
+            </div>
+            <div style="margin-top: 25px;">
+                <h1 data-aos="slide-right" style="font-weight: 600;font-size: 45px;">AOD vs Film School Comparison</h1>
+            </div>
+            <a style="color: black; text-decoration: none; " target="_blank"
+                href="https://sirlance007.github.io/Sign-up/">
+                <button id="enroll"
+                    style="margin-top: 25px; background-color: #ffa200; height: 35px; border-radius: 20px; border: none; width: 148px; color: black;" data-aos="slide-up" >Enroll
+                    Now</a></button>
+            <div class="body-6-image-gallary">
+                <img style="margin-right: 15px;" width="477px" height="559px"
+                    src="Images/Screenshot 2024-08-11 193856.png" alt="" data-aos="flip-left" data-aos-delay="100">
+                <img style="margin-top: 25px;" width="477px" height="559px"
+                    src="Images/Screenshot 2024-08-11 194532.png" alt="" data-aos="flip-right" data-aos-delay="500">
+            </div>
+        </div>
+
+        <div class="body body-7" style="display: flex; flex-direction: column;">
+            <div>
+                <h5 style="color: #ffa200; width: 228px; height: 21px;" data-aos="zoom-in-left">Couse Instructors</h5>
+            </div>
+            <div style="margin-top: 25px; width: 981px;">
+                <h1 style="font-weight: 600;font-size: 45px;" data-aos="zoom-in-right">Led by industry experts who've mastered their fields and
+                    shaped their industries</h1>
+            </div>
+            <div class="body-6-image-gallary">
+                <img style="padding: 5px;" src="Images/instuc-1.jpeg" alt="" data-aos="zoom-in-up" data-aos-delay="100">
+                <img style="padding: 5px;" src="Images/instuc-2.avif" alt="" data-aos="zoom-in-up" data-aos-delay="300">
+                <img style="padding: 5px;" src="Images/instruc-3.avif" alt="" data-aos="zoom-in-up" data-aos-delay="500">
+            </div>
+        </div>
+
+        <div class="body body-8" style="margin-top: 250px;">
+            <div class="courses" style="margin-bottom:10px; height: 20px; width:21.3px;">
+                <h5 id="courses" style="color: #ffa200;" data-aos="fade-up">Courses</h5>
+            </div>
+            <div class="sub-heading-3" style="margin-bottom: 4.2rem; width: 929px; height: 93px;">
+                <h1 data-aos="fade-down">Unlock new career possibilities – transform your path with our courses today</h1>
+            </div>
+            <div class="body-3-image-gallary" >
+                <div class="image-gallary">
+                    <div class="images-1-row">
+                        <div class="cards" style="padding: 10px;"><img data-aos="zoom-in-up" data-aos-delay="100" style="height: 247px;
+                            width: 453px;" src="Images/img-4.avif" alt=""></div>
+                        <div class="cards" style="padding: 10px;"><img data-aos="zoom-in-up" data-aos-delay="300" style="height: 247px;
+                            width: 453px;" src="Images/img-5.avif" alt=""></div>
+                        <div class="cards" style="padding: 10px;"><img data-aos="zoom-in-up" data-aos-delay="500" style="height: 247px;
+                            width: 453px;" src="Images/img-6.avif" alt=""></div>
+                    </div>
+                    <div class="images-2-row">
+                        <div class="cards" style="padding: 10px;"><img data-aos="zoom-in-up" data-aos-delay="700" style="height: 247px;
+                            width: 453px;" src="Images/img-1.avif" alt=""></div>
+                        <div class="cards" style="padding: 10px;"><img data-aos="zoom-in-up" data-aos-delay="900" style="height: 247px;
+                            width: 453px;" src="Images/img-2.avif" alt=""></div>
+                        <div class="cards" style="padding: 10px;"><img data-aos="zoom-in-up" data-aos-delay="1100" style="height: 247px;
+                            width: 453px;" src="Images/img-3.avif" alt=""></div>
+                    </div>
+                    <div class="images-2-row">
+                        <div class="cards" style="padding: 10px;"><img data-aos="zoom-in-up" data-aos-delay="1300" style="height: 247px;
+                            width: 453px;" src="Images/img-7.avif" alt=""></div>
+                        <div class="cards" style="padding: 10px;"><img data-aos="zoom-in-up" data-aos-delay="1500" style="height: 247px;
+                            width: 453px;" src="Images/img-8.avif" alt=""></div>
+                        <div class="cards" style="padding: 10px;"><img data-aos="zoom-in-up" data-aos-delay="1700" style="height: 247px;
+                            width: 453px;" src="Images/img-9.avif" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body body-9" style="display: flex; flex-direction: column;">
+            <div>
+                <h5 style="color: #ffa200; width: 228px; height: 21px;" data-aos="zoom-in-down">Facebook Community</h5>
+            </div>
+            <div style="margin-top: 25px; width: 981px;">
+                <h1 style="font-weight: 600;font-size: 45px;" data-aos="zoom-in-up">Join a diverse filmmaker community for support, feedback,
+                    networking, regional connections, and job postings</h1>
+            </div>
+            <div class="body-9-image-gallary">
+                <div>
+                    <img data-aos="zoom-in-right" data-aos-delay="100" style="padding: 5px;  width: 477px; height: 580px;"
+                        src="Images/Screenshot 2024-08-11 212018.png" alt="">
+                </div>
+                <div>
+                    <video data-aos="zoom-in-right" data-aos-delay="300" style="padding: 5px; width: 477px; height: 580px;" autoplay="" loop="" muted=""
+                        playsinline="" preload="metadata"
+                        src="https://theartofdocumentary.com/aod-social-card-facebook-video-comments-1080p.mp4"></video>
+                </div>
+                <div>
+                    <img data-aos="zoom-in-right" data-aos-delay="500" style="padding: 5px; width: 477px; height: 580px;"
+                        src="Images/Screenshot 2024-08-11 212052.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="body body-10" style="margin-top: 200px;">
+            <footer class="footer">
+                <div class="content">
+                    <div class="columns-left">
+                        <ul class="lists">
+                            <li class="logo">
+                                <img src="kistechno_wh.png" alt="" width="200">
+                            </li>
+                            <li class="words"> We create profestional graphics design,website development
+                            </li>
+                            <li class="address">
+                                <img src="icons8-home-50.png" alt="" width="25px">
+                                <a href="#" id="a2">2nd Floor, 72/269, Shipra Path, Paramhans Marg, Mansarovar,
+                                    Jaipur</a>
+                            </li>
+                            <li class="gmail">
+                                <img src="icons8-gmail-50.png" width="25px" alt=""><a href="#"
+                                    id="a2">info@kistechnosoftware.in</a>
+                            </li>
+                            <li class="number">
+                                <img src="icons8-phone-50.png" width="25px" alt=""> <a href="#"
+                                    id="a2">info@kistechnosoftware.in</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="columns-middle">
+                        <li class="heading ">Services</li>
+                        <li class="data"><a href="#">Data Security</a></li>
+                        <li class="data"><a href="#">It Consulations</a></li>
+                        <li class="data"><a href="#">Website Development</a></li>
+                        <li class="data"><a href="#">UI/UX Design</a></li>
+                        <li class="data"><a href="#">Cloud Services</a></li>
+                        <li class="data"><a href="#">Mobile App Development</a></li>
+                        <li class="data"><a href="#">CRM & Software</a></li>
+                        <li class="data"><a href="#">Graphic Design</a></li>
+                    </div>
+                    <div class="columns-middle">
+                        <li class="heading">Information</li>
+                        <li class="info"><a href="#">About Company</a></li>
+                        <li class="info"><a href="#">Contact Us</a></li>
+                        <li class="info"><a href="#">Blogs</a></li>
+                        <li class="info"><a href="#">Career</a></li>
+                        <li class="info"><a href="#">Testimonials</a></li>
+                    </div>
+                    <div class="columns-right">
+                        <li class="heading news">Newsletter</li>
+                        <li class="news"><a href="#">Register now to get latest updateson promotions & coupons</a></li>
+                        <li class="news"><input class="input" type="text" placeholder="Enter Your Gmail"> <input
+                                type="button" value="Subscribe" class="sumbit"></li>
+                        <li class="news"><a href="#" id="a">Privacy & Policy</a><span>|</span><a href="#" id="a">Terms
+                                and Conditions</a><span>|</span><a href="#" id="a">Terms of Use</a></li>
+                        <li class="news"><a href="#" id="a">Shipping Policy</a><span>|</span> <a href="#" id="a">Refund
+                                & Cancellation</a></li>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="copyright">
+                    <span id="span">@2024 Copyrights by <a id="a1"
+                            href="www.kistechnosoftware.in">www.kistechnosoftware.in</a> All Rights Reserved</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+            duration : 1000,
+            offset : 175
+        }
+      );
+    </script>
+</body>
+
+</html>
