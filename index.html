@@ -16,6 +16,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
+        /* Media Quires Section */
+        @media screen and (orientation : portrait){
+            .buttons{
+                margin-right: auto;
+            }
+        }
+
+
         .video-container {
             position: relative;
             overflow: hidden;
@@ -112,13 +120,12 @@
             <div class="video-background">
                 <video autoplay muted loop id="background-video">
                     <source src="https://theartofdocumentary.com/aod-home-hero-preview-1080p.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
                 </video>
-                <div style="z-index: 2;" class="content">
+                <div style="z-index: 2; display: flex; flex-direction: column;" class="content ">
                     <!-- Your content here -->
-                    <div class="navabr" style="display: flex; align-items: center; justify-content: center;">
-                        <div>
-                            <svg width="66" height="24" viewBox="0 0 66 24" fill="none"
+                    <div class="navabr fixed-top mt-3" style="display: flex; align-items: center; justify-content: center; ">
+                        <div style="margin-right: 1100px; width: 76px; height: 27px;">
+                            <svg width="object-fit" height="object-fit" viewBox="0 0 66 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12.4993 0.202816L20.2819 22.0394L21.8654 23.831H14.0154L15.5652 22.0394L13.2742 15.6169H5.22209L3.63862 20.2141L7.91737 23.831H0L3.3354 20.2479L8.96179 3.5831V0.169014H12.4993V0.202816ZM13.1732 15.3465L9.13024 3.95493L5.28948 15.3465H13.1732Z"
@@ -132,18 +139,25 @@
                             </svg>
                         </div>
                         <div class="buttons">
-                            <button id="enroll" style="margin-top: 25px; background-color: transparent; height: 36px; border-radius: 20px; width: 81px; background: 0.1px solid gray;" data-aos="slide-up" class="aos-init aos-animate"><a style="color: white; text-decoration: none; " target="_blank" href="https://sirlance007.github.io/Sign-up/">MENU</a></button>
-                            <button id="enroll" style="margin-top: 25px; background-color: transparent; height: 35px; border-radius: 20px; background: 1px solid gray;  width: 148px;" data-aos="slide-up" class="aos-init aos-animate"><a style="color: white; text-decoration: none; " target="_blank" href="https://sirlance007.github.io/Sign-up/">Enroll
-                                Now</a></button>
-                        </div>
+                            <button  class="enroll" style="margin-right: 20px; padding: 5px; height: 36px; border-radius: 20px; width: 81px; border: 0.1px solid gray;" data-aos="slide-up">
+                              <a class="enroll-a" style=" text-decoration: none;" target="_blank" href="https://sirlance007.github.io/Sign-up/">MENU</a>
+                            </button>
+                            <button  class="enroll" style="height: 35px; border-radius: 20px; border: 1px solid gray; width: 148px;" data-aos="slide-up">
+                              <a class="enroll-a" style="height: fit-content; width:fit-content; text-decoration: none;" target="_blank" href="https://sirlance007.github.io/Sign-up/">Enroll Now</a>
+                            </button>
+                          </div>
+                          
                     </div>
-                    <div class="body-1">
-                        <div class="body-1-heading-1"></div>
-                        <div class="body-1-heading-2"></div>
-                        <div class="buttons">
-                            <button id="enroll" style="margin-top: 25px; background-color: transparent; height: 36px; border-radius: 20px; width: 81px; background: 0.1px solid gray;" data-aos="slide-up" class="aos-init aos-animate"><a style="color: white; text-decoration: none; " target="_blank" href="https://sirlance007.github.io/Sign-up/">MENU</a></button>
-                        <button id="enroll" style="margin-top: 25px; background-color: transparent; height: 35px; border-radius: 20px; background: 1px solid gray;  width: 148px;" data-aos="slide-up" class="aos-init aos-animate"><a style="color: white; text-decoration: none; " target="_blank" href="https://sirlance007.github.io/Sign-up/">Enroll
-                            Now</a></button>
+                    <div style="text-align: left;margin-top: 200px; margin-left: 449px;">
+                        <h1 style="margin-top: 12px; font-size: 50px; width: 759px; height: 83px;" data-aos="slide-up">The ART OF DOCUMENTARY</h1>
+                        <h2 style="" data-aos="slide-up">Start Your Filming Journey</h2>
+                        <div class="buttons" style="display: flex;">
+                            <div>
+                            <button  id="enroll" style="margin-top: 65px; background-color: #ffa200; height: 35px; border-radius: 20px; border: 1px solid #ffa200;  width: 148px;" data-aos="slide-up" class="aos-init aos-animate"><a style="color: black; text-decoration: none; " target="_blank" href="https://sirlance007.github.io/Sign-up/">Enroll Now</a></button>
+                        </div>
+                        <div style="margin-top: 68px; margin-left: 50px;">
+                            <a target="_blank" href="https://theartofdocumentary.com/aod-home-hero-full-1080p.mp4"><h6>Watch Trailer</h6></a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -353,10 +367,18 @@
                     shaped their industries</h1>
             </div>
             <div class="body-6-image-gallary">
+                <div>
                 <img style="padding: 5px;" src="Images/instuc-1.jpeg" alt="" data-aos="zoom-in-up" data-aos-delay="100">
+                <h6>Michael Del Monte</h6>
+                </div>
+                <div>
                 <img style="padding: 5px;" src="Images/instuc-2.avif" alt="" data-aos="zoom-in-up" data-aos-delay="300">
-                <img style="padding: 5px;" src="Images/instruc-3.avif" alt="" data-aos="zoom-in-up"
-                    data-aos-delay="500">
+                <h6>Mark Bone</h6>
+                </div>
+                <div>
+                <img style="padding: 5px;" src="Images/instruc-3.avif" alt="" data-aos="zoom-in-up" data-aos-delay="500">
+                <h6>Lewis Gordon</h6>
+                </div>
             </div>
         </div>
 
@@ -374,42 +396,51 @@
                         <div class="cards"  style="padding: 10px;">
                             <img target ="__blank" type = "button" onclick="image1()" data-aos="zoom-in-up" data-aos-delay="100" style="height: 247px;
                             width: 453px;" src="Images/img-4.avif" alt="">
+                            <h6 data-aos="zoom-in-up" data-aos-delay="100" >Musical Journey Tiers</h6>
                         </div>
                         <div class="cards" onclick="image2()" style="padding: 10px;">
                             <img type = "button" target ="__blank" data-aos="zoom-in-up" data-aos-delay="300" style="height: 247px;
                             width: 453px;" src="Images/img-5.avif" alt="">
+                            <h6 data-aos="zoom-in-up" data-aos-delay="300">Farmhouse Vibes:</h6>
                         </div>
                         <div class="cards" onclick="image3()" style="padding: 10px;">
                             <img target ="__blank" type = "button" data-aos="zoom-in-up" data-aos-delay="500" style="height: 247px;
                             width: 453px;" src="Images/img-6.avif" alt="">
+                            <h6 data-aos="zoom-in-up" data-aos-delay="500">Explorer’s Club</h6>
                         </div>
                     </div>
                     <div class="images-2-row">
                         <div onclick="image4()" class="cards" style="padding: 10px;">
-                            <img target ="__blank" type = "button" data-aos="zoom-in-up" data-aos-delay="700" style="height: 247px;
+                            <img target ="__blank" type = "button" data-aos="zoom-in-up" data-aos-delay="500" style="height: 247px;
                             width: 453px;" src="Images/img-1.avif" alt="">
+                            <h6 data-aos="zoom-in-up" data-aos-delay="100">Tech Enthusiast Plans</h6>
                         </div>
                         <div onclick="image5()" class="cards" style="padding: 10px;">
-                            <img target ="__blank" type = "button" data-aos="zoom-in-up" data-aos-delay="900" style="height: 247px;
+                            <img target ="__blank" type = "button" data-aos="zoom-in-up" data-aos-delay="700" style="height: 247px;
                             width: 453px;" src="Images/img-2.avif" alt="">
+                            <h6 data-aos="zoom-in-up" data-aos-delay="300">Artistic Strokes:</h6>
                         </div>
                         <div onclick="image6()" class="cards" style="padding: 10px;">
-                            <img target ="__blank" type = "button" data-aos="zoom-in-up" data-aos-delay="1100" style="height: 247px;
+                            <img target ="__blank" type = "button" data-aos="zoom-in-up" data-aos-delay="900" style="height: 247px;
                             width: 453px;" src="Images/img-3.avif" alt="">
+                            <h6 data-aos="zoom-in-up" data-aos-delay="500">Culinary Delights</h6>
                         </div>
                     </div>
                     <div class="images-2-row">
                         <div class="cards" style="padding: 10px;">
-                            <img target ="__blank" type = "button" data-aos="zoom-in-up" data-aos-delay="1300" style="height: 247px;
+                            <img target ="__blank" type = "button" data-aos="zoom-in-up" data-aos-delay="1100" style="height: 247px;
                             width: 453px;" src="Images/img-7.avif" alt="">
+                            <h6 data-aos="zoom-in-up" data-aos-delay="100">Pixel Art Guild</h6>
                         </div>
                         <div class="cards" style="padding: 10px;">
-                            <img target ="__blank" data-aos="zoom-in-up" data-aos-delay="1500" style="height: 247px;
+                            <img target ="__blank" data-aos="zoom-in-up" data-aos-delay="1100" style="height: 247px;
                             width: 453px;" src="Images/img-8.avif" alt="">
+                            <h6 data-aos="zoom-in-up" data-aos-delay="100">Eco-Warrior Society</h6>
                         </div>
                         <div class="cards" style="padding: 10px;">
-                            <img target ="__blank" type = "button" data-aos="zoom-in-up" data-aos-delay="1700" style="height: 247px;
+                            <img target ="__blank" type = "button" data-aos="zoom-in-up" data-aos-delay="1100" style="height: 247px;
                             width: 453px;" src="Images/img-9.avif" alt="">
+                            <h6 data-aos="zoom-in-up" data-aos-delay="100">Cosmic Coders</h6>
                         </div>
                     </div>
                 </div>
@@ -452,7 +483,7 @@
                     <div class="columns-left">
                         <ul class="lists">
                             <li class="logo">
-                                <img src="kistechno_wh.png" alt="" width="200">
+                                <!-- <img src="Screenshot 2024-08-13 190435.png" alt="" height="100px" width="200"> -->
                             </li>
                             <li class="words"> We create profestional graphics design,website development
                             </li>
@@ -473,14 +504,14 @@
                     </div>
                     <div class="columns-middle">
                         <li class="heading ">Services</li>
-                        <li class="data"><a href="#">Data Security</a></li>
-                        <li class="data"><a href="#">It Consulations</a></li>
-                        <li class="data"><a href="#">Website Development</a></li>
-                        <li class="data"><a href="#">UI/UX Design</a></li>
-                        <li class="data"><a href="#">Cloud Services</a></li>
-                        <li class="data"><a href="#">Mobile App Development</a></li>
-                        <li class="data"><a href="#">CRM & Software</a></li>
-                        <li class="data"><a href="#">Graphic Design</a></li>
+                        <li class="data"><a href="#">Pre-Production Services</a></li>
+                        <li class="data"><a href="#">Filming Services</a></li>
+                        <li class="data"><a href="#">Post-Production Services</a></li>
+                        <li class="data"><a href="#">Film Production Consulting Services</a></li>
+                        <li class="data"><a href="#">Octane Multimedia Studios</a></li>
+                        <li class="data"><a href="#">Other Top Film Production Companies:</a></li>
+                        <li class="data"><a href="#">Filming Gagets</a></li>
+                        <li class="data"><a href="#">Best Instructors</a></li>
                     </div>
                     <div class="columns-middle">
                         <li class="heading">Information</li>
