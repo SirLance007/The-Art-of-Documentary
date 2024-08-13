@@ -1,6 +1,7 @@
 html{
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 body{
   color: white;
@@ -34,13 +35,30 @@ body{
   text-align: center;
   padding: 20px;
 }
-
+.btn-btn:hover {
+  background-color: yellow; /* Change to your desired hover background color */
+  color: white; /* Text color on hover */
+}
+/* 
+.btn-btn:hover{
+  background-color: #ffa200;
+}
+.my-button:hover {
+  background-color: #ffa200;
+} */
+.enroll{
+  background-color: transparent;
+}
+.enroll:hover{
+  background-color: #ffa200;
+  color: black;
+}
 .button{
   border-radius: 12px;
   width: auto;
   height: 31px;
   font-size: 12px;
-  border-color: grey;
+  /* border-color: grey; */
   color: white;
   font-size: 1.2rem;
 }
@@ -64,8 +82,14 @@ body{
   margin-left: 250px;
   align-items: center;
 }
+.cards{
+  transition: 1s;
+  border: 1px solid linear-gradient(to right, red, purple); 
+}
 .cards:hover{
-  background-image: url() ;
+  transform: scale(1.2);
+  z-index: 2;
+  border-radius: 15px;
 }
 .body-3{
   display: flex;
@@ -122,6 +146,7 @@ body{
 }
 .body-6-image-gallary{
   margin-top: 117px;
+  display: flex;
 }
 .body-7{
   align-items: center;
@@ -152,11 +177,9 @@ body{
   
   /* flex-direction: row; */
 }
-#enroll:hover{
-  color: white;
-  background-color: white;
-  transition: 0.5s;
-}
+/* #enroll:hover{
+  color: black;
+} */
 .body-9-image-gallary{
   margin-top: 117px;
   display: flex;
@@ -202,14 +225,14 @@ li{
   font-size: 20px;
   color: #FFCC70;
 }
-a{
+ a{
   color: white;
   text-decoration: none;
 }
-a:hover{
+ a:hover{
   color: lightblue;
   transition: 0.5s;
-}
+} 
 .data{
   margin-top: 8px;
   font-size: 13px;
